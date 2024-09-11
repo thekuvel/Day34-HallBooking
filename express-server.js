@@ -8,7 +8,7 @@ const server = express();
 server.use(express.json());
 
 server.get("/", (req,res)=>{
-    res.send("Hi");
+    res.send("Hi use /rooms and /bookings");
 })
 
 server.use("/rooms", roomsRouter)
